@@ -1,0 +1,57 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, rgba(174, 192, 241, 0.801), rgb(54, 67, 245));
+    padding: 0;
+    margin: 0;
+    padding-bottom: 100px; /*para dar un poco de altura y el footer no tape el texto de abajo*/
+}
+
+header{
+    text-align: center;
+}
+
+.active{
+    background-color:rgba(174, 192, 241, 0.801) ;
+}
+
+ul{
+    list-style-type: none; /*para sacar los puntitos que anteceden a la lista cuando la creamos*/
+    margin: 0; /*para poder manejarlo dentro de cada li*/
+    padding: 0; /*para poder manejarlo dentro de cada li*/
+    overflow: hidden;/*para que no aparezcan las barras de navegacion*/
+    background-color: #333;
+}
+
+li{
+    float: left; /*para que se agrupen a la izquierda*/
+}
+
+li a{
+    display: block; /*para que tome todo el ancho que le permita*/
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none; /*para que quita los subrayados del link*/
+}
+
+li a:hover:not(.active){ /*al pasar el mouse sobre el menu toma el color del background definido,
+    al poner not(.active le estas diciendo que no lo aplique al que esta activo)*/
+background-color: #111;
+}
+
+h1{
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    color:rgba(174, 192, 241, 0.801) ;
+}
+
+footer{
+background-color: #333;
+color: white;
+padding: 15px;
+text-align: center;
+position: fixed; /*para que siemre este pegado abajo al hacer scroll*/
+bottom: 0; /*para que quede abajo*/
+width: 100%; /*para que ocupe todo el ancho*/
+}

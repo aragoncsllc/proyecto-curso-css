@@ -1,0 +1,33 @@
+.contenedor {
+  display: flex;
+  justify-content: center; /*aqui se justifica el contenedor al centro*/
+}
+
+table {
+  border-collapse: collapse; /*esto es para que no haya doble borde*/
+  border: 2px solid grey; /*estableciendo el grueso y el color del borde*/
+  letter-spacing: 1px; /*estableciendo el anho  entre las letras*/
+  font-size: 1.5rem; /*el rem se refiere a que el tamano va a ser el 1.5 de la fuente base*/
+  background-color: rgb(197, 197, 197);
+}
+
+th{
+    text-align: left;
+    border: 1px solid grey;
+    padding: 10px;
+    background-color: rgb(110, 110, 110);
+}
+
+td{
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+h2{
+    margin: 0;
+    padding: 20px;
+}
+
+tr:hover{ /*el hover es para cuando pasemos el mouse sobre la tabla nos cambie en este caso el color*/
+    background-color: rgb(205, 205, 205);
+}

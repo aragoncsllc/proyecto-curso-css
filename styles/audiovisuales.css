@@ -1,0 +1,27 @@
+.deLado{
+    float: left; /*para que el video nos quede a la izquierda*/
+    width: auto; /*al poner en auto, el ancho va a ser proporcionar al alto
+     que esta deficnido en el html a 400*/
+}
+
+.centrado{
+    display: flex; 
+    justify-content: center; /*para centrar el contenido de las imagenes*/
+}
+
+.galeria{
+    margin: 5px;
+    border: 1px solid white;
+    float: left;
+    width: 33vw;
+}
+
+div.galeria img{
+    width: 100%;
+    height: 100%;
+}
+
+.descripcion{
+    padding: 15px;
+    text-align: center;
+}

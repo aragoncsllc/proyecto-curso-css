@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/contacto.css" />
+    <title>LunaR-1, el robot</title>    
+   </head>
+
+  <body>
+    <!-- Este es el título y la navegación -->
+    <header>
+      <h1>LunaR-1, el robot</h1>
+      <nav>
+        <ul>
+          <!-- El que tiene el clase active es donde estás parado y te ayuda a darle estilo especial -->
+          <li><a href="/html/index.html">Home</a></li>
+          <li><a href="/html/misiones.html">Misiones</a></li>
+          <li><a href="/html/audiovisuales.html">AudioVisuales</a></li>
+          <li><a class="active" href="/html/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Este es el formulario de contacto -->
+    <div class="contenedor">
+      <form>
+        <label for="nombre">Nombre: </label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Escribe aquí tu nombre"
+          required
+          minlength="3"
+        />
+        <label for="mail">Email: </label>
+        <input
+          type="email"
+          id="mail"
+          name="mail"
+          placeholder="Escribe aquí tu mail"
+          required
+        />
+        <label for="pais">País: </label>
+        <select name="pais" id="pais">
+          <option value="Cuba">Cuba</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Chile">Chile</option>
+          <option value="Bolivia">Bolivia</option>
+          <option value="Perú">Perú</option>
+          <option value="Uruguay">Uruguay</option>
+          <option value="España">España</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Venezuela">Venezuela</option>
+          <option value="Paraguay">Paraguay</option>
+          <option value="Ecuador">Ecuador</option>
+        </select>
+        <label for="comentario">Comentario: </label>
+        <textarea
+          name="comentario"
+          id="comentario"
+          placeholder="Escribe aquí tu comentario"
+        ></textarea>
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+
+    <!-- Este es el footer (la parte del final de la página) -->
+    <footer>Derechos reservados &copy; 2024</footer>
+  </body>
+</html>
